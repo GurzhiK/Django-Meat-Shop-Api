@@ -3,8 +3,8 @@ from django.urls import path
 from .views import CategoryList, CategoryDetail, CategoryCreate, CategoryDelete, CategoryUpdate
 
 urlpatterns = [
-    path('categories/', CategoryList.as_view(), name='categoriy-list'),
-    path('categories/detail/<int:pk>/',
+    path('categories/', CategoryList.as_view(), name='category-list'),
+    path('categories/<int:pk>/',
          CategoryDetail.as_view(), name='category-detail'),
     path('categories/create/',
          CategoryCreate.as_view(), name='category-create'),
